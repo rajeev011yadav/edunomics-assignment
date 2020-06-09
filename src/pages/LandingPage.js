@@ -1,7 +1,7 @@
 import React, {Fragment}from "react";
-import Header from "./Header";
-import LogInForm from "./LogInForm";
-import Footer from "./Footer";
+import Header from "../component/Header";
+import LogInForm from "../component/LogInForm";
+import Footer from "../component/Footer";
 
 const LandingPage = () => (
         <Fragment>
