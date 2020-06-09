@@ -1,6 +1,7 @@
 :root {
   --white: white;
   --blue: #4169e1;
+  --grey: grey;
 }
 
 *, *::before, *::after {
@@ -255,4 +256,152 @@ a {
 
 .footer--logo {
   height: 15px;
+}
+
+
+/* ====================================== 
+
+    DASHBOARD STYLES
+
+=========================================*/
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  color: var(--grey);
+}
+
+.dashboard-header .btn {
+  color: var(--grey);
+}
+
+.dashboard-header .btn--border {
+  border-color: var(--grey);
+}
+
+.dashboard-layout--top-container {
+  display: flex;
+}
+
+.dashboard-layout--left-side-container {
+  background-color: var(--grey);
+  width: 300px;
+}
+
+.dash-board-layout--right-side-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: stretch;
+}
+
+.dash-board-layout--top-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #73c2fb;
+  padding: 100px 0;
+}
+
+.dashboard-side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-top: 20px;
+}
+
+.top-activity-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.top-activity-container .activity-box {
+  width: 300px;
+}
+
+.top-activity-container .activity-box:first-of-type {
+  margin-right: 40px;
+}
+
+.bottom-activity-container {
+  padding-bottom: 30px;
+}
+.bottom-activity-container .activity {
+  width: 60%;
+  margin: auto;
+}
+
+.bottom-activity-container .activity-title {
+  text-align: center;
+}
+
+.tabs-holder {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.dashboard-side-nav--link-tab {
+  padding: 10px 20px;
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--white)
+}
+
+.dashboard-side-nav--link-tab:hover {
+  background-color: rgb(201, 187, 187);
+}
+
+
+/* ================================= 
+
+  Tab styles
+
+====================================*/
+
+.tab {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  padding: 20px 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background-color: var(--white);
+  border-radius: 5px;
+}
+
+.tab-img{
+  width: 50px;
+}
+
+.tab-text {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* ====================================
+
+ Activity
+
+======================================*/
+
+.activity {
+  border: 1px solid grey;
+  border-radius: 20px;
+  box-shadow: 2px 3px 4px grey;
+}
+
+.activity-title {
+  border-bottom: 1px solid grey;
+  padding: 5px 0;
+  margin: 0 30px;
+}
+
+.activity-body {
+  height: 200px;
 }
